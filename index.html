@@ -36,12 +36,16 @@
 <nav>
   
   <div class="navbar-brand">
-    <a class="nav-link" href="#" id="nav-all">Hack or Snooze Hesam</a>
+    <a class="nav-link" href="#" id="nav-all">Hack or Snooze</a>
   </div>
 
-  <div class="main-nav-links">
+  <div class="main-nav-links hidden">
 
-    <a class="nav-link" href="#" id="nav-submit-story"> Submit! </a>
+    <a class="nav-link" href="#" id="nav-submit-story"> SUBMIT </a>
+
+    <a class="nav-link" href="#" id="nav-favorites">FAVORITES</a>
+
+    <a class="nav-link" href="#" id="nav-my-stories">MY STORIES</a>
 
   </div>
 
@@ -55,7 +59,6 @@
 <!-- area for stories (all stories, user stories, favorites) -->
 <section id="stories-container" class="stories-container container">
   
-
   <!-- form for subimitted new story -->
   <form action="" class="hidden" id="submit-form">
     <div>
@@ -80,6 +83,11 @@
   <!-- List of all stories -->
   <ol id="all-stories-list" class="stories-list"></ol>
 
+  <!-- List of stories favorited by the usern -->
+  <ol id="favorited-stories" class="hidden stories-list"> </ol>
+
+  <!-- List of stories by the user -->
+  <ol id="my-stories" class="hidden stories-list"> </ol>
 </section>
 
 <!-- Login and signup forms -->
@@ -121,6 +129,16 @@
     </div>
     <button type="submit">create account</button>
   </form>
+</section>
+
+<!-- User profile -->
+<section id="user-profile" class="hidden">
+  <div class="user-profile-box" container>
+    <h4> User Profile Info </h4>
+      <div> Name: <span id="profile-name"></span></div>
+      <div>Username: <span id="profile-username"></span> </div>
+      <div>Account Created: <span id="profile-account-date"></span></div>
+  </div>    
 </section>
 
 <!-- Library JS & our JS -->

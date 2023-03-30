@@ -5,6 +5,12 @@ body {
   margin: 8px 7.5vw;
 }
 
+body {
+  font-family: Arimo, sans-serif;
+  margin: 8px 7.5vw;
+  height: 100vh;
+  background-image: radial-gradient(circle, rgb(210, 36, 111) 0%, rgb(160, 87, 194) 100%);
+}
 h1 {
   font-size: 1.1rem;
   margin: 0;
