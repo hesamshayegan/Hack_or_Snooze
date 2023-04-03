@@ -183,7 +183,7 @@ class User {
     });
 
     let { user } = response.data;
-
+    console.log(response.data)
     return new User(
       {
         username: user.username,
@@ -193,6 +193,7 @@ class User {
         ownStories: user.stories
       },
       response.data.token
+      
     );
   }
 

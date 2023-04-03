@@ -49,6 +49,7 @@ $navSubmitStory.on("click", navSubmitStoryClick);
 function navFavoritesClick(evt) {
   console.debug("navFavoritesClick", evt);
   hidePageComponents();
+  $ownStories.hide()
   putFavoritesListOnPage();
 }
 
@@ -59,6 +60,7 @@ function navMyStories (evt) {
   console.debug("navMyStories", evt);
   hidePageComponents();
   putUserStoriesOnPage();
+  $favoritedStories.hide();
   $ownStories.show();
 }
 
